@@ -7,7 +7,7 @@ This CSS library provides round checkbox styles with different size variants (`x
 Include the library via CDN by adding the following link in your HTML file's `<head>` section:
 
 ```html
-<link rel="stylesheet" href="https://raw.githubusercontent.com/ssakib4040/RoundCheckboxer/master/build/roundcheckboxer.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ssakib4040/roundcheckboxer@master/build/roundcheckboxer.min.css">
 ``````
 
 <input type="checkbox" class="roundcheckboxer base" id="checkboxBase"/>
