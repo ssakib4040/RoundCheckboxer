@@ -1,0 +1,16 @@
+{
+  "name": "roundcheckboxer",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "author": "Sadman Sakib",
+  "scripts": {
+    "dev": "parcel",
+    "build": "sass ./src/style.scss ./build/roundcheckboxer.min.css --style compressed",
+    "build-html": "rm -rf dist && parcel build --no-content-hash"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.10.3",
+    "parcel": "^2.10.3"
+  }
+}

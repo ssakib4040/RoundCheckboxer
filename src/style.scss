@@ -1,0 +1,82 @@
+// Define sizes using variables
+$xs-size: 12px;
+$sm-size: 16px;
+$base-size: 18px; // Base size
+$lg-size: 24px;
+$xl-size: 32px;
+
+// Common checkbox styles
+.roundcheckboxer {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 50%;
+  height: $base-size;
+  width: $base-size;
+  margin: 0;
+
+  //   checked state
+  &:checked {
+    background-color: orange !important;
+  }
+}
+
+.roundcheckboxer.sm {
+  width: $sm-size !important;
+  height: $sm-size !important;
+
+  &:checked {
+    height: $sm-size !important;
+    width: $sm-size !important;
+  }
+}
+
+.roundcheckboxer.base {
+  width: $base-size !important;
+  height: $base-size !important;
+
+  &:checked {
+    height: $base-size !important;
+    width: $base-size !important;
+  }
+}
+
+.roundcheckboxer.lg {
+  width: $lg-size !important;
+  height: $lg-size !important;
+
+  &:checked {
+    height: $lg-size !important;
+    width: $lg-size !important;
+  }
+}
+
+.roundcheckboxer.xl {
+  width: $xl-size !important;
+  height: $xl-size !important;
+
+  &:checked {
+    height: $xl-size !important;
+    width: $xl-size !important;
+  }
+}
+
+// Checked state
+.roundcheckboxer:checked {
+  background-color: black;
+
+  // Add icon when checked
+  &::after {
+    content: "\2713"; /* Unicode for checkmark icon */
+    color: white;
+    font-size: $base-size; // Adjust the size as needed
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1; /* Ensures proper vertical centering */
+  }
+}
